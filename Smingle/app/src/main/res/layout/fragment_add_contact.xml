@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/etName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:ellipsize="start"-->
+        <!--android:ems="10"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Your Name"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/etPhone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:layout_below="@+id/etName"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:ellipsize="start"-->
+        <!--android:ems="10"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Phone"-->
+        <!--android:inputType="phone" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/etCaption"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:layout_below="@+id/etPhone"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:ellipsize="start"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Caption" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/ibSubmit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:onClick="addContact"-->
+        <!--android:src="@drawable/submit"-->
+        <!--android:layout_below="@+id/etCaption"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ivSelfie"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@+id/ibSubmit" />-->
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:background='#6AA84F'
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Your Name"
+        android:textSize="50sp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/ivSelfie"
+        android:layout_alignEnd="@+id/ivSelfie" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ellipsize="start"
+        android:textAlignment="center"
+        android:ems="10"
+        android:textSize="50sp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:background='#3D85C6'
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Number"
+        android:inputType="phone"
+        android:layout_below="@+id/etName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etCaption"
+        android:layout_width="match_parent"
+        android:textColorHint="#ffffff"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:background='#674EA7'
+        android:layout_height="150dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Caption"
+        android:textAlignment="center"
+        android:ellipsize="start"
+        android:layout_below="@+id/etPhone"
+        android:layout_alignRight="@+id/ivSelfie"
+        android:layout_alignEnd="@+id/ivSelfie" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibSubmit"
+        android:src="@drawable/submit"
+        android:background="#1abc9c"
+        android:gravity='center'
+        android:onClick="addContact"
+        android:layout_below="@+id/etCaption"
+        android:layout_alignRight="@+id/ivSelfie"
+        android:layout_alignEnd="@+id/ivSelfie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivSelfie"
+        android:layout_alignTop="@+id/ibSubmit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp" />
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ></FrameLayout>
+
+
+</RelativeLayout>
